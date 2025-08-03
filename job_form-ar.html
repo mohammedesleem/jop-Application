@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب التوظيف</title>
+</head>
+
+<body>
+    <header>
+        <img src="job_background.jpg" alt="job_background" srcset="" width="100%" height="200px">
+        <h2>job Application Form</h2>
+        <a href="job_form-ar.html">
+            <img src="icon.png" alt="" width="50px" height="20px">
+            <span> English</span>
+        </a>
+    </header>
+    <main>
+        <section>
+            <form action="login.php" method="post">
+                <fieldset>
+                    <legend>معلومات الشخص</legend>
+                    <label for="name">الاسم كامل:</label>
+                    <input type="text" placeholder="الاسم الاول" id="name">
+                    <input type="text" placeholder="الاسم الاوسط">
+                    <input type="text" placeholder="اسم العائلة"><br><br>
+
+                    <label for="email">الايميل:</label> <input type="email" id="email"
+                        placeholder="example@example.com"><br><br>
+
+                    <label for="date">تاريخ الميلاد:</label> <input type="date" id="date"><br><br>
+
+                    <label for="number">رقم الهاتف:</label> <input type="tel" id="number"
+                        placeholder="+1234567890"><br><br>
+
+                    <label for="upPdf">تحميل السيرة الذاتية (PDF فقط):</label>
+                    <input type="file" id="upPdf" accept=".pdf"><br><br>
+
+                    <label for="password">كلمة المرور: </label>
+                    <input type="password" id="password" placeholder="Enter a secure password"><br><br>
+
+                    <label for="">الجنس:</label>
+                    <input type="radio" name="gender" value="male"> ذكر
+                    <input type="radio" name="gender" value="female"> انثى<br><br>
+
+                    <label for="selectO">القسم المفضل:</label>
+                    <select id="selectO">
+                        <option>-- اختر القسم --</option>
+
+                    </select><br><br>
+
+                    <label for="tellYourSelf">حدثنا عن نفسك:</label>
+                    <textarea placeholder="اكتب نبذة قصيرة عن نفسك..." id="tellYourSelf"></textarea><br><br>
+
+                    <input type="checkbox" id="Agree">
+                    <label for="Agree">اوافق على الشروط والاحكام</label><br><br>
+
+
+                </fieldset>
+                <br>
+
+
+                <button type="submit">ارسال الطلب</button>
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    &copy; 2025 jop Portal
+
+
+</body>
+
+</html>
