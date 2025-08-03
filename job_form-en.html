@@ -47,10 +47,16 @@
                 <input type="radio" name="gender" value="female"> Female<br><br>
 
                 <label for="selectO">Preferred Department:</label>
-                <select id="selectO" name="selectDepartment">
-                    <option>-- Select Department --</option>
-                    <!-- More options here -->
-                </select><br><br>
+                <input list="listDepartment" id="selectO" name="PreferredDepartment" placeholder="Select Department">
+                <datalist id="listDepartment">
+                    <option value="General Management"></option>
+                    <option value="Finance"></option>
+                    <option value="Marketing"></option>
+                    <option value="it"></option>
+
+                </datalist><br><br>
+
+
 
                 <label for="tellYourSelf">Tell us about yourself:</label>
                 <textarea placeholder="Write briefly about yourself..." name="tellYourSelf"

@@ -45,10 +45,14 @@
                     <input type="radio" name="gender" value="female"> انثى<br><br>
 
                     <label for="selectO">القسم المفضل:</label>
-                    <select id="selectO" name="selectDepartment">
-                        <option>-- اختر القسم --</option>
+                    <input list="listDepartment" id="selectO" name="PreferredDepartment" placeholder="اختر القسم">
+                    <datalist id="listDepartment">
+                        <option value="الادارة العامة"></option>
+                        <option value="المالية"></option>
+                        <option value="المحاسبة"></option>
+                        <option value="it"></option>
 
-                    </select><br><br>
+                    </datalist><br><br>
 
                     <label for="tellYourSelf">حدثنا عن نفسك:</label>
                     <textarea placeholder="اكتب نبذة قصيرة عن نفسك..." name="tellYourSelf"
