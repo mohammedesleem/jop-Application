@@ -23,40 +23,41 @@
         <form action="login.php" method="post">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label>Full Name:</label>
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Middle name">
-                <input type="text" placeholder="Last name"><br><br>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="First name" name="firstName">
+                <input type="text" placeholder="Middle name" name="middleName">
+                <input type="text" placeholder="Last name" name="lastName"><br><br>
 
-                <label for="name">Email:</label> <input type="email" id="name"
-                    placeholder="example@example.com"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com"><br><br>
 
-                <label for="date">Date of Birth:</label> <input type="date" id="date"><br><br>
+                <label for="date">Date of Birth:</label> <input name="date" type="date" id="date"><br><br>
 
                 <label for="number">Phone Number:</label>
-                <input type="tel" id="number" placeholder="+1234567890"><br><br>
+                <input type="tel" id="number" name="Phone" placeholder="+1234567890"><br><br>
 
                 <label for="upPdf">Upload Resume (PDF only):</label>
-                <input type="file" id="upPdf" accept=".pdf"><br><br>
+                <input type="file" id="upPdf" name="Resume" accept=".pdf"><br><br>
 
                 <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter a secure password"><br><br>
+                <input type="password" id="password" name="password" placeholder="Enter a secure password"><br><br>
 
                 <label for="">Gender:</label>
                 <input type="radio" name="gender" value="male"> Male
                 <input type="radio" name="gender" value="female"> Female<br><br>
 
                 <label for="selectO">Preferred Department:</label>
-                <select id="selectO">
+                <select id="selectO" name="selectDepartment">
                     <option>-- Select Department --</option>
                     <!-- More options here -->
                 </select><br><br>
 
                 <label for="tellYourSelf">Tell us about yourself:</label>
-                <textarea placeholder="Write briefly about yourself..." id="tellYourSelf"></textarea><br><br>
+                <textarea placeholder="Write briefly about yourself..." name="tellYourSelf"
+                    id="tellYourSelf"></textarea><br><br>
 
-                <input type="checkbox" id="Agree"> <label for="Agree">I agree to the terms and
-                    conditions</label><br><br>
+                <input type="checkbox" id="Agree" name="agreeTermsConditions">
+                <label for="Agree">I agree to the terms and conditions</label><br><br>
 
 
             </fieldset>

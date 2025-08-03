@@ -22,38 +22,39 @@
                 <fieldset>
                     <legend>معلومات الشخص</legend>
                     <label for="name">الاسم كامل:</label>
-                    <input type="text" placeholder="الاسم الاول" id="name">
-                    <input type="text" placeholder="الاسم الاوسط">
-                    <input type="text" placeholder="اسم العائلة"><br><br>
+                    <input type="text" placeholder="الاسم الاول" name="firstName" id="name">
+                    <input type="text" placeholder="الاسم الاوسط" name="middleName">
+                    <input type="text" placeholder="اسم العائلة" name="lastName"><br><br>
 
-                    <label for="email">الايميل:</label> <input type="email" id="email"
+                    <label for="email">الايميل:</label> <input type="email" name="email" id="email"
                         placeholder="example@example.com"><br><br>
 
-                    <label for="date">تاريخ الميلاد:</label> <input type="date" id="date"><br><br>
+                    <label for="date">تاريخ الميلاد:</label> <input type="date" name="date" id="date"><br><br>
 
-                    <label for="number">رقم الهاتف:</label> <input type="tel" id="number"
+                    <label for="number">رقم الهاتف:</label> <input type="tel" name="Phone" id="number"
                         placeholder="+1234567890"><br><br>
 
                     <label for="upPdf">تحميل السيرة الذاتية (PDF فقط):</label>
-                    <input type="file" id="upPdf" accept=".pdf"><br><br>
+                    <input type="file" name="Resume" id="upPdf" accept=".pdf"><br><br>
 
                     <label for="password">كلمة المرور: </label>
-                    <input type="password" id="password" placeholder="Enter a secure password"><br><br>
+                    <input type="password" name="password" id="password" placeholder="Enter a secure password"><br><br>
 
                     <label for="">الجنس:</label>
                     <input type="radio" name="gender" value="male"> ذكر
                     <input type="radio" name="gender" value="female"> انثى<br><br>
 
                     <label for="selectO">القسم المفضل:</label>
-                    <select id="selectO">
+                    <select id="selectO" name="selectDepartment">
                         <option>-- اختر القسم --</option>
 
                     </select><br><br>
 
                     <label for="tellYourSelf">حدثنا عن نفسك:</label>
-                    <textarea placeholder="اكتب نبذة قصيرة عن نفسك..." id="tellYourSelf"></textarea><br><br>
+                    <textarea placeholder="اكتب نبذة قصيرة عن نفسك..." name="tellYourSelf"
+                        id="tellYourSelf"></textarea><br><br>
 
-                    <input type="checkbox" id="Agree">
+                    <input type="checkbox" id="Agree" name="agreeTermsConditions">
                     <label for="Agree">اوافق على الشروط والاحكام</label><br><br>
 
 
